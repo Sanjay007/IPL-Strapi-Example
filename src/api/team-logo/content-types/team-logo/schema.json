@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "team_logos",
+  "info": {
+    "singularName": "team-logo",
+    "pluralName": "team-logos",
+    "displayName": "Team",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "teamCode": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "teamlists": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::teamlist.teamlist",
+      "mappedBy": "team_logo"
+    }
+  }
+}

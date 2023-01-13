@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "memlists",
+  "info": {
+    "singularName": "memlist",
+    "pluralName": "memlists",
+    "displayName": "memlist"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "teamcod": {
+      "type": "string"
+    }
+  }
+}

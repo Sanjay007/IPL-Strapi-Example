@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teamlists",
+  "info": {
+    "singularName": "teamlist",
+    "pluralName": "teamlists",
+    "displayName": "Player",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PLAYER": {
+      "type": "string"
+    },
+    "ROLE": {
+      "type": "string"
+    },
+    "PRICE": {
+      "type": "string"
+    },
+    "team_logo": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::team-logo.team-logo",
+      "inversedBy": "teamlists"
+    }
+  }
+}
