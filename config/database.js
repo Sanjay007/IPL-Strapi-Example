@@ -4,7 +4,7 @@ const path = require('path');
       connection: {
         client: 'postgres',
         connection: {
-          host: env('DATABASE_HOST', 'dpg-cf14p8p4reb5o40saadg-a.singapore-postgres.render.com'),
+          host: env('DATABASE_HOST', 'dpg-cf14p8p4reb5o40saadg-a'),
           port: env.int('DATABASE_PORT', 5432),
           database: env('DATABASE_NAME', 'ipl'),
           user: env('DATABASE_USERNAME', 'iplp01'),
