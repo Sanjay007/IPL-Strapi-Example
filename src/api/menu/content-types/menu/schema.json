@@ -30,7 +30,9 @@
       "type": "string"
     },
     "typelink": {
-      "type": "string"
+      "type": "text",
+      "required": true,
+      "unique": false
     }
   }
 }
